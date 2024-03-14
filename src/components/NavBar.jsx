@@ -1,27 +1,24 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-import { CargWidget } from "./CardWitdet";
+import { CardWidget } from './CardWidget';
 
 export const NavBar = () => {
     return (
         <>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar bg="dark" data-bs-theme="dark" className='container-fluid'>
                 <Container>
                     <Navbar.Brand href="#home">Tú Tienda Tecnologica</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Televisores</Nav.Link>
-                            <Nav.Link href="#link">Celulares</Nav.Link>
-                            <Nav.Link href="#link">Notebook</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#televisores">Televisores</Nav.Link>
+                        <Nav.Link href="#celulares">Celulares</Nav.Link>
+                        <Nav.Link href="#notebook">Notebook</Nav.Link>
+                    </Nav>
+                    <CardWidget />
                 </Container>
             </Navbar>
-            <CargWidget />
+                        
         </>
-    );
+    )
 };

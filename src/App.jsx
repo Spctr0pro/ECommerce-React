@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer texto="Pronto te mostraremos nuestros productos" />
+      <ItemListContainer greeting="Pronto te mostraremos nuestros productos" />
     </>
   );
 }

@@ -8,7 +8,7 @@ import { CardWidget } from './CardWidget';
 export const NavBar = () => {
     return (
         <>
-            <Navbar bg="dark" data-bs-theme="dark" className='container-fluid margin'>
+            <Navbar bg="dark" data-bs-theme="dark" className='container-fluid margin header'>
                 <Container>
                     <Navbar.Brand to="/" as={NavLink}>Tú Tienda Tecnologica</Navbar.Brand>
                     <Nav className="me-auto">
